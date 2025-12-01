@@ -40,6 +40,7 @@ public class Tuomari : MonoBehaviour
             voittajaTeksti.color = new Color32(238, 201, 11, 255);
             voittajaTeksti.text = $"Voittaja on {winnerName}!!!";
             voittajaSelvilla = true;
+            GameManager.Instance.Phase = RacePhase.Finished;
         }
 
 

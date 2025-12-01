@@ -23,6 +23,8 @@ public class Countdown : MonoBehaviour
 
         countdownText.text = "GO!";
 
+        GameManager.Instance.Phase = RacePhase.Racing;
+
         yield return new WaitForSecondsRealtime(stepSeconds);
 
         countdownText.text = "";

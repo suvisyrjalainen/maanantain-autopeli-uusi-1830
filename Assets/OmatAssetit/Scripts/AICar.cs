@@ -19,6 +19,11 @@ public class AICar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.Phase != RacePhase.Racing)
+        {
+            return;
+        }
+        
         //otetaan listan ensimmäinen kohdepiste
         Transform target = waypoints[currentWpIndex];
 
