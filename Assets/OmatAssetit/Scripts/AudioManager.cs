@@ -30,17 +30,42 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(AudioClip musiikki){
         
-        if(musicSource.isPlaying){
-            musicSource.Stop();
+        if(musicSource.clip == musiikki && musicSource.isPlaying){
+            return;
         }
         
         musicSource.clip = musiikki;
+        musicSource.loop = true;
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip aani){
-        sfxSource.PlayOneShot(aani);
+    public void StopMusic(){
+        musicSource.Stop();
     }
 
+    public void PlaySFXLoop(AudioClip clip){
+        
+        if(sfxSource.clip == clip && sfxSource.isPlaying){
+            return;
+        }
+        
+        sfxSource.clip = clip;
+        sfxSource.loop = true;
+        sfxSource.Play();
+    }
+
+    public void StopSFX(){
+        sfxSource.Stop();
+    }
+
+    public void PlaySFX(AudioClip clip){
+        
+        sfxSource.clip = clip;
+        sfxSource.loop = false;
+        sfxSource.Play();
+    }
+
+
+    
 
 }

@@ -2640,6 +2640,7 @@ MonoBehaviour:
   countdownText: {fileID: 1138040084}
   countdownFrom: 3
   stepSeconds: 1.5
+  pling: {fileID: 8300000, guid: eaef4f143647145b9b7029c298a0dd81, type: 3}
 --- !u!4 &1324867446
 Transform:
   m_ObjectHideFlags: 0
@@ -3361,8 +3362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   turnSpeed: 50
-  aani: {fileID: 8300000, guid: 03bf91d88fce91c41995d27de63cc967, type: 3}
-  musiikki: {fileID: 8300000, guid: 03bf91d88fce91c41995d27de63cc967, type: 3}
+  tyhjakaynti: {fileID: 8300000, guid: 5699dddcce16c4543b95951c4ce0e092, type: 3}
+  ajo: {fileID: 8300000, guid: 03e3bd08a6e70684dbe299a3e185fdd2, type: 3}
+  liiraus: {fileID: 8300000, guid: bd9566abdbf08834281bfb4ea8b92a5d, type: 3}
 --- !u!65 &1770252409
 BoxCollider:
   m_ObjectHideFlags: 0
